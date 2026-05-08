@@ -1,4 +1,5 @@
 import { motion, type Variants } from "framer-motion";
+import { useState } from "react";
 import {
   Phone,
   MapPin,
@@ -6,6 +7,7 @@ import {
   CheckCircle2,
   ChevronRight,
   Menu,
+  X,
   Map,
   Smartphone,
   Image,
@@ -22,29 +24,89 @@ const STAGGER: Variants = {
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
 };
 
+const NAV_LINKS = [
+  { label: "Marke", href: "#marke" },
+  { label: "Website", href: "#website" },
+  { label: "Social Media", href: "#social" },
+  { label: "Kontakt", href: "#kontakt" },
+];
+
 export default function Home() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground selection:bg-primary/20">
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-4 md:px-6 h-24 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          {/* Logo */}
+          <a href="#" className="flex items-center gap-3 shrink-0">
             <img
               src="/images/logo.png"
               alt="Trattoria Joseppe Logo"
               className="h-20 w-20 object-contain drop-shadow-sm"
             />
+          </a>
+
+          {/* Desktop nav links */}
+          <ul className="hidden md:flex items-center gap-8">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-sm font-medium font-sans text-foreground/70 hover:text-foreground transition-colors tracking-wide uppercase"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Right side */}
+          <div className="flex items-center gap-3">
+            <Button
+              asChild
+              className="hidden sm:flex rounded-full shadow-md bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6"
+            >
+              <a href="tel:052811602020">
+                <Phone className="mr-2 h-4 w-4" />
+                Anrufen & bestellen
+              </a>
+            </Button>
+
+            {/* Mobile hamburger */}
+            <button
+              className="md:hidden p-2 rounded-lg text-foreground/70 hover:text-foreground hover:bg-muted transition-colors"
+              onClick={() => setMobileOpen((o) => !o)}
+              aria-label="Menü"
+            >
+              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
-          <Button
-            asChild
-            className="rounded-full shadow-md bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6"
-          >
-            <a href="tel:052811602020">
-              <Phone className="mr-2 h-4 w-4" />
+        </div>
+
+        {/* Mobile menu */}
+        {mobileOpen && (
+          <div className="md:hidden border-t border-border/50 bg-background/98 px-4 py-4 flex flex-col gap-4">
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="text-sm font-medium font-sans text-foreground/70 hover:text-foreground transition-colors tracking-wide uppercase py-1"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href="tel:052811602020"
+              className="mt-2 flex items-center gap-2 text-sm font-medium font-sans text-secondary-foreground bg-secondary rounded-full px-5 py-2.5 w-fit"
+            >
+              <Phone className="h-4 w-4" />
               Anrufen & bestellen
             </a>
-          </Button>
-        </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero */}
@@ -118,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* Brand Redesign */}
-      <section className="py-24 bg-background">
+      <section id="marke" className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -169,7 +231,7 @@ export default function Home() {
       </section>
 
       {/* Website Offer */}
-      <section className="py-24 bg-[#FAFAF8]">
+      <section id="website" className="py-24 bg-[#FAFAF8]">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             initial="hidden"
@@ -209,7 +271,7 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={FADE_UP}
-                className="bg-white p-6 rounded-2xl border border-border hover:border-primary/40 hover:shadow-md transition-all group flex items-center gap-4"
+                className="bg-white p-6 rounded-2xl border border-border hover:border-primary/40 hover:shadow-md transition-all group flex items-start gap-4"
               >
                 <div className="bg-muted/70 text-secondary p-3 rounded-xl group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
                   <feature.icon className="h-5 w-5" />
@@ -226,7 +288,7 @@ export default function Home() {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-24 bg-secondary text-secondary-foreground overflow-hidden">
+      <section id="social" className="py-24 bg-secondary text-secondary-foreground overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             initial="hidden"
@@ -377,7 +439,7 @@ export default function Home() {
       </section>
 
       {/* Info Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
+      <section id="kontakt" className="py-24 bg-background relative overflow-hidden">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-[#D13B2A]/5 rounded-full blur-3xl"></div>
 
@@ -405,7 +467,7 @@ export default function Home() {
                 <h3 className="font-semibold text-lg mb-2 font-sans">
                   Adresse
                 </h3>
-                <p className="text-muted-foreground font-sans">
+                <p className="text-muted-foreground font-sans text-center">
                   Mittlere Str. 41
                   <br />
                   32676 Lügde
@@ -419,7 +481,7 @@ export default function Home() {
                 <h3 className="font-semibold text-lg mb-2 font-sans">
                   Öffnungszeiten
                 </h3>
-                <p className="text-muted-foreground font-sans">
+                <p className="text-muted-foreground font-sans text-center">
                   Täglich 11–15 & 17–22 Uhr
                   <br />
                   <span className="text-[#D13B2A] font-semibold">
