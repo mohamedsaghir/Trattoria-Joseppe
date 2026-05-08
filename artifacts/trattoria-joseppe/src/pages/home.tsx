@@ -3,7 +3,7 @@ import { Phone, MapPin, Clock, CheckCircle2, ChevronRight, Menu, Map, Smartphone
 import { Button } from "@/components/ui/button";
 
 // Assets
-import logoPath from "@assets/logo.png";
+import logoPath from "@assets/image_1778274266557.png";
 import beforeAfterPath from "@assets/afterbefore.png";
 import pizzaPosterPath from "@assets/pizza.png";
 
