@@ -6,15 +6,3 @@ id = "d_QHD8WZ5RjF42TCuOalB"
 uri = "file://artifacts/trattoria-joseppe/public/images/hero-pizza.png"
 type = "image"
 title = "Neapolitan pizza on wood"
-
-[[generated]]
-id = "wq5BiwYR6LX_KIWemmtGL"
-uri = "file://artifacts/trattoria-joseppe/public/images/social-pasta.png"
-type = "image"
-title = "Pasta dish for social"
-
-[[generated]]
-id = "q1GUh3VkBVWs20Wj95x8Q"
-uri = "file://artifacts/trattoria-joseppe/public/images/social-bruschetta.png"
-type = "image"
-title = "Bruschetta for social"
