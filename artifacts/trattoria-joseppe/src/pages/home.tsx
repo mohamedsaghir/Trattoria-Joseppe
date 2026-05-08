@@ -246,8 +246,8 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Post 1 - Pizza Poster */}
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-start">
+            {/* Post 1 - Pizza */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -257,27 +257,15 @@ export default function Home() {
             >
               <div className="p-3 border-b flex items-center gap-2 bg-white text-black">
                 <div className="h-9 w-9 rounded-full overflow-hidden border border-border">
-                  <img
-                    src="/images/logo.png"
-                    alt="Logo"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm leading-none font-sans">
-                    trattoria.joseppe
-                  </p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    Lügde, Deutschland
-                  </p>
+                  <p className="font-semibold text-sm leading-none font-sans">trattoria.joseppe</p>
+                  <p className="text-xs text-gray-400 mt-0.5">Lügde, Deutschland</p>
                 </div>
               </div>
-              <div className="aspect-square bg-secondary relative">
-                <img
-                  src="/images/pizza.png"
-                  alt="Pizza Poster"
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-[4/5] relative overflow-hidden">
+                <img src="/images/pizza.png" alt="Pizza" className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <div className="p-4 bg-white text-black">
                 <p className="text-sm leading-relaxed">
@@ -293,31 +281,19 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-2xl md:mt-8"
+              className="bg-white rounded-2xl overflow-hidden shadow-2xl"
             >
               <div className="p-3 border-b flex items-center gap-2 bg-white text-black">
                 <div className="h-9 w-9 rounded-full overflow-hidden border border-border">
-                  <img
-                    src="/images/logo.png"
-                    alt="Logo"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm leading-none font-sans">
-                    trattoria.joseppe
-                  </p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    Lügde, Deutschland
-                  </p>
+                  <p className="font-semibold text-sm leading-none font-sans">trattoria.joseppe</p>
+                  <p className="text-xs text-gray-400 mt-0.5">Lügde, Deutschland</p>
                 </div>
               </div>
-              <div className="aspect-square relative">
-                <img
-                  src="/images/pasta.png"
-                  alt="Fresh Pasta"
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-[4/5] relative overflow-hidden">
+                <img src="/images/pasta.png" alt="Fresh Pasta" className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <div className="p-4 bg-white text-black">
                 <p className="text-sm leading-relaxed">
@@ -327,7 +303,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Post 3 - Bruschetta */}
+            {/* Post 3 - Salat */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -337,33 +313,20 @@ export default function Home() {
             >
               <div className="p-3 border-b flex items-center gap-2 bg-white text-black">
                 <div className="h-9 w-9 rounded-full overflow-hidden border border-border">
-                  <img
-                    src="/images/logo.png"
-                    alt="Logo"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm leading-none font-sans">
-                    trattoria.joseppe
-                  </p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    Lügde, Deutschland
-                  </p>
+                  <p className="font-semibold text-sm leading-none font-sans">trattoria.joseppe</p>
+                  <p className="text-xs text-gray-400 mt-0.5">Lügde, Deutschland</p>
                 </div>
               </div>
-              <div className="aspect-square relative">
-                <img
-                  src="/images/salat.png"
-                  alt="Salat"
-                  className="w-full h-full object-cover"
-                />
+              <div className="aspect-[4/5] relative overflow-hidden">
+                <img src="/images/salat.png" alt="Salat" className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <div className="p-4 bg-white text-black">
                 <p className="text-sm leading-relaxed">
                   <span className="font-bold mr-1 font-sans">trattoria.joseppe</span>
-                  Ein guter Abend beginnt mit gutem Essen. Besuchen Sie uns in
-                  der Mittlere Str. 41, 32676 Lügde. 🍷
+                  Ein guter Abend beginnt mit gutem Essen. Besuchen Sie uns in der Mittlere Str. 41, 32676 Lügde. 🍷
                 </p>
               </div>
             </motion.div>
