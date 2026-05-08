@@ -209,7 +209,7 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={FADE_UP}
-                className="bg-white p-6 rounded-2xl border border-border hover:border-primary/40 hover:shadow-md transition-all group flex items-center gap-4"
+                className="bg-white p-6 rounded-2xl border border-border hover:border-primary/40 hover:shadow-md transition-all group flex items-start gap-4"
               >
                 <div className="bg-muted/70 text-secondary p-3 rounded-xl group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
                   <feature.icon className="h-5 w-5" />
@@ -405,7 +405,7 @@ export default function Home() {
                 <h3 className="font-semibold text-lg mb-2 font-sans">
                   Adresse
                 </h3>
-                <p className="text-muted-foreground font-sans">
+                <p className="text-muted-foreground font-sans text-center">
                   Mittlere Str. 41
                   <br />
                   32676 Lügde
@@ -419,7 +419,7 @@ export default function Home() {
                 <h3 className="font-semibold text-lg mb-2 font-sans">
                   Öffnungszeiten
                 </h3>
-                <p className="text-muted-foreground font-sans">
+                <p className="text-muted-foreground font-sans text-center">
                   Täglich 11–15 & 17–22 Uhr
                   <br />
                   <span className="text-[#D13B2A] font-semibold">
