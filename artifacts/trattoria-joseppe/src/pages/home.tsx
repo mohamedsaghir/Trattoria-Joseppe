@@ -178,7 +178,7 @@ export default function Home() {
             variants={FADE_UP}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-              <span className="inline-block text-sm font-semibold tracking-widest text-primary uppercase mb-4 font-sans">
+            <span className="inline-block text-sm font-semibold tracking-widest text-primary uppercase mb-4 font-sans">
               Digitaler Auftritt
             </span>
             <h2 className="text-4xl md:text-6xl font-normal font-serif text-foreground mb-6 uppercase tracking-wide">
@@ -209,7 +209,7 @@ export default function Home() {
               <motion.div
                 key={i}
                 variants={FADE_UP}
-                className="bg-white p-6 rounded-2xl border border-border hover:border-primary/40 hover:shadow-md transition-all group flex items-start gap-4"
+                className="bg-white p-6 rounded-2xl border border-border hover:border-primary/40 hover:shadow-md transition-all group flex items-center gap-4"
               >
                 <div className="bg-muted/70 text-secondary p-3 rounded-xl group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
                   <feature.icon className="h-5 w-5" />
@@ -235,7 +235,7 @@ export default function Home() {
             variants={FADE_UP}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-              <span className="inline-block text-sm font-semibold tracking-widest text-primary uppercase mb-4 font-sans">
+            <span className="inline-block text-sm font-semibold tracking-widest text-primary uppercase mb-4 font-sans">
               Online-Präsenz
             </span>
             <h2 className="text-4xl md:text-6xl font-normal font-serif mb-6 text-white uppercase tracking-wide">
@@ -257,19 +257,33 @@ export default function Home() {
             >
               <div className="p-3 border-b flex items-center gap-2 bg-white text-black">
                 <div className="h-9 w-9 rounded-full overflow-hidden border border-border">
-                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-cover" />
+                  <img
+                    src="/images/logo.png"
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm leading-none font-sans">trattoria.joseppe</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Lügde, Deutschland</p>
+                  <p className="font-semibold text-sm leading-none font-sans">
+                    trattoria.joseppe
+                  </p>
+                  <p className="text-xs text-gray-400 mt-0.5">
+                    Lügde, Deutschland
+                  </p>
                 </div>
               </div>
               <div className="aspect-[4/5] relative overflow-hidden">
-                <img src="/images/pizza.png" alt="Pizza" className="absolute inset-0 w-full h-full object-cover" />
+                <img
+                  src="/images/pizza.png"
+                  alt="Pizza"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="p-4 bg-white text-black">
                 <p className="text-sm leading-relaxed">
-                  <span className="font-bold mr-1 font-sans">trattoria.joseppe</span>
+                  <span className="font-bold mr-1 font-sans">
+                    trattoria.joseppe
+                  </span>
                   Pizza gemacht für Genussmomente. 🍕✨
                 </p>
               </div>
@@ -285,19 +299,33 @@ export default function Home() {
             >
               <div className="p-3 border-b flex items-center gap-2 bg-white text-black">
                 <div className="h-9 w-9 rounded-full overflow-hidden border border-border">
-                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-cover" />
+                  <img
+                    src="/images/logo.png"
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm leading-none font-sans">trattoria.joseppe</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Lügde, Deutschland</p>
+                  <p className="font-semibold text-sm leading-none font-sans">
+                    trattoria.joseppe
+                  </p>
+                  <p className="text-xs text-gray-400 mt-0.5">
+                    Lügde, Deutschland
+                  </p>
                 </div>
               </div>
               <div className="aspect-[4/5] relative overflow-hidden">
-                <img src="/images/pasta.png" alt="Fresh Pasta" className="absolute inset-0 w-full h-full object-cover" />
+                <img
+                  src="/images/pasta.png"
+                  alt="Fresh Pasta"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="p-4 bg-white text-black">
                 <p className="text-sm leading-relaxed">
-                  <span className="font-bold mr-1 font-sans">trattoria.joseppe</span>
+                  <span className="font-bold mr-1 font-sans">
+                    trattoria.joseppe
+                  </span>
                   Frisch. Heiß. Italienisch. 🍝 Jetzt bestellen — 052811602020
                 </p>
               </div>
@@ -313,20 +341,34 @@ export default function Home() {
             >
               <div className="p-3 border-b flex items-center gap-2 bg-white text-black">
                 <div className="h-9 w-9 rounded-full overflow-hidden border border-border">
-                  <img src="/images/logo.png" alt="Logo" className="w-full h-full object-cover" />
+                  <img
+                    src="/images/logo.png"
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm leading-none font-sans">trattoria.joseppe</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Lügde, Deutschland</p>
+                  <p className="font-semibold text-sm leading-none font-sans">
+                    trattoria.joseppe
+                  </p>
+                  <p className="text-xs text-gray-400 mt-0.5">
+                    Lügde, Deutschland
+                  </p>
                 </div>
               </div>
               <div className="aspect-[4/5] relative overflow-hidden">
-                <img src="/images/salat.png" alt="Salat" className="absolute inset-0 w-full h-full object-cover" />
+                <img
+                  src="/images/salat.png"
+                  alt="Salat"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="p-4 bg-white text-black">
                 <p className="text-sm leading-relaxed">
-                  <span className="font-bold mr-1 font-sans">trattoria.joseppe</span>
-                  Ein guter Abend beginnt mit gutem Essen. Besuchen Sie uns in der Mittlere Str. 41, 32676 Lügde. 🍷
+                  <span className="font-bold mr-1 font-sans">
+                    trattoria.joseppe
+                  </span>
+                  Ein guter Abend beginnt mit gutem Essen.
                 </p>
               </div>
             </motion.div>
@@ -360,7 +402,9 @@ export default function Home() {
                 <div className="bg-primary/10 p-4 rounded-2xl mb-4 text-primary">
                   <MapPin className="h-6 w-6" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 font-sans">Adresse</h3>
+                <h3 className="font-semibold text-lg mb-2 font-sans">
+                  Adresse
+                </h3>
                 <p className="text-muted-foreground font-sans">
                   Mittlere Str. 41
                   <br />
@@ -372,7 +416,9 @@ export default function Home() {
                 <div className="bg-primary/10 p-4 rounded-2xl mb-4 text-primary">
                   <Clock className="h-6 w-6" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 font-sans">Öffnungszeiten</h3>
+                <h3 className="font-semibold text-lg mb-2 font-sans">
+                  Öffnungszeiten
+                </h3>
                 <p className="text-muted-foreground font-sans">
                   Täglich 11–15 & 17–22 Uhr
                   <br />
@@ -386,8 +432,12 @@ export default function Home() {
                 <div className="bg-primary/10 p-4 rounded-2xl mb-4 text-primary">
                   <Phone className="h-6 w-6" />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 font-sans">Kontakt</h3>
-                <p className="text-muted-foreground mb-4 font-sans">05281 160 2020</p>
+                <h3 className="font-semibold text-lg mb-2 font-sans">
+                  Kontakt
+                </h3>
+                <p className="text-muted-foreground mb-4 font-sans">
+                  05281 160 2020
+                </p>
                 <Button
                   asChild
                   variant="outline"
@@ -445,7 +495,9 @@ export default function Home() {
                   <h3 className="font-semibold text-lg text-white mb-2 font-sans">
                     {offer.title}
                   </h3>
-                  <p className="text-white/60 text-sm font-sans">{offer.desc}</p>
+                  <p className="text-white/60 text-sm font-sans">
+                    {offer.desc}
+                  </p>
                 </div>
               ))}
             </div>
@@ -471,7 +523,9 @@ export default function Home() {
           />
           <span className="font-sans">Trattoria Joseppe</span>
         </div>
-        <p className="font-sans">Dies ist eine Demo-Präsentation. Entworfen für Trattoria Joseppe.</p>
+        <p className="font-sans">
+          Dies ist eine Demo-Präsentation. Entworfen für Trattoria Joseppe.
+        </p>
       </footer>
     </div>
   );
