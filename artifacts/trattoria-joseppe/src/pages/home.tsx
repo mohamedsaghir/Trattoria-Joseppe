@@ -24,7 +24,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logoPath} alt="Trattoria Joseppe Logo" className="h-12 w-12 object-contain" />
+            <img src={logoPath} alt="Trattoria Joseppe Logo" className="h-16 w-16 object-contain" />
             <span className="font-serif font-semibold text-xl tracking-tight hidden sm:inline-block">
               Trattoria Joseppe
             </span>
@@ -56,8 +56,8 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8"
           >
-            <div className="bg-background p-3 rounded-full inline-block shadow-2xl">
-              <img src={logoPath} alt="Trattoria Joseppe Logo" className="h-32 w-32 md:h-40 md:w-40 object-contain" />
+            <div className="bg-background p-4 rounded-full inline-block shadow-2xl">
+              <img src={logoPath} alt="Trattoria Joseppe Logo" className="h-40 w-40 md:h-52 md:w-52 object-contain" />
             </div>
           </motion.div>
           
