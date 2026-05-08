@@ -1,8 +1,13 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "d_QHD8WZ5RjF42TCuOalB"
 uri = "file://artifacts/trattoria-joseppe/public/images/hero-pizza.png"
 type = "image"
 title = "Neapolitan pizza on wood"
+
+[[outputs]]
+id = "iGkgxEs1azPQoyDNKQAv8"
+uri = "file://trattoria-joseppe-dist.tar.gz"
+type = "unspecified"
+title = "Trattoria Joseppe – Production Build"
