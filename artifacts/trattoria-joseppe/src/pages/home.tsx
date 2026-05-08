@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 // Assets
 import logoPath from "@assets/logo.png";
-import beforeAfterPath from "@assets/beforeafter.png";
+import beforeAfterPath from "@assets/afterbefore.png";
 import pizzaPosterPath from "@assets/pizza.png";
 
 const FADE_UP: Variants = {
