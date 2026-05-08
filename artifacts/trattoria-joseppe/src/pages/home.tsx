@@ -3,9 +3,9 @@ import { Phone, MapPin, Clock, CheckCircle2, ChevronRight, Menu, Map, Smartphone
 import { Button } from "@/components/ui/button";
 
 // Assets
-import logoPath from "@assets/image_1778261156672.png";
-import beforeAfterPath from "@assets/image_1778260850744.png";
-import pizzaPosterPath from "@assets/image_1778260859445.png";
+import logoPath from "@assets/logo.png";
+import beforeAfterPath from "@assets/beforeafter.png";
+import pizzaPosterPath from "@assets/pizza.png";
 
 const FADE_UP: Variants = {
   hidden: { opacity: 0, y: 30 },
