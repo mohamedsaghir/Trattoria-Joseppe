@@ -1,0 +1,85 @@
+Build a modern, premium one-page website for a pizza restaurant in Germany called “Trattoria Joseppe”.
+
+Goal:
+This website is a demo offer presentation for the restaurant owner. It should show how their business could look with a new digital brand, website, and social media content.
+
+Language:
+German only.
+
+Style:
+Modern Italian restaurant style, premium, clean, warm, professional.
+Use the colors from the redesigned logo:
+- Cream / off-white
+- Black / dark charcoal
+- Gold
+- Tomato red
+- Basil green
+
+Website Sections:
+
+1. Hero Section
+- Use the new Trattoria Joseppe logo
+- Large premium pizza image
+- Headline: “Trattoria Joseppe neu erleben”
+- Subheadline: “Eine moderne digitale Präsenz für eine authentische italienische Küche.”
+- CTA button: “Anrufen & bestellen”
+- Phone number: 052811602020
+
+2. Brand Redesign Section
+Show a before/after comparison:
+- “Vorher”
+- “Nachher”
+Explain shortly:
+“Ein moderneres Logo, klarere Farben und ein professioneller Auftritt für mehr Vertrauen.”
+
+3. Website Offer Section
+Title: “Neue Website für Trattoria Joseppe”
+Include features:
+- Moderne Startseite
+- Speisekarte online
+- Öffnungszeiten
+- Adresse & Kontakt
+- Mobile optimiert
+- Google Maps Integration
+- Schneller Bestellkontakt
+
+4. Social Media Section
+Title: “Social Media Posts”
+Show 3–4 sample post cards using the restaurant branding.
+Text examples:
+- “Pizza gemacht für Genussmomente”
+- “Frisch. Heiß. Italienisch.”
+- “Jetzt bestellen”
+- “Mittlere Str. 41, 32676 Lügde”
+
+5. Restaurant Information Section
+Include:
+Phone: 052811602020
+Address: Mittlere Str. 41, 32676 Lügde
+Opening hours:
+Täglich 11–15 Uhr, 17–22 Uhr
+Dienstag geschlossen
+
+6. Final Offer Section
+Title: “Unser Angebot”
+Cards:
+- Neues Branding
+- Moderne Website
+- Social Media Posts
+
+Short text:
+“Wir helfen Trattoria Joseppe, online professioneller, moderner und vertrauenswürdiger aufzutreten.”
+
+CTA:
+“Kostenlose Demo ansehen”
+
+Technical Requirements:
+- Use React + Tailwind CSS
+- Fully responsive
+- Premium animations
+- Smooth scrolling
+- Clean component structure
+- Modern cards, shadows, rounded corners
+- Light mode only
+- Use placeholder images if needed
+- Make the design look ready to present to a real restaurant owner
