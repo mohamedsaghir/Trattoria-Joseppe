@@ -108,7 +108,7 @@ export default function LieferandoSection() {
             size="lg"
             className="rounded-full text-base px-10 h-14 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
           >
-            <a href={`tel:${PHONE_NUMBER}`}>
+            <a href="https://www.lieferando.de/en/partner/signup/" target="_blank" rel="noopener noreferrer">
               Lassen Sie uns loslegen!
               <ChevronRight className="ml-2 h-5 w-5" />
             </a>
