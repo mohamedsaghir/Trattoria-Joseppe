@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { label: "Marke", href: "#marke" },
   { label: "Website", href: "#website" },
   { label: "Social Media", href: "#social" },
+  { label: "Lieferando", href: "#lieferando" },
   { label: "Kontakt", href: "#kontakt" },
 ] as const;
 

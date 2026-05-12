@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import BrandSection from "@/components/sections/BrandSection";
 import WebsiteSection from "@/components/sections/WebsiteSection";
 import SocialSection from "@/components/sections/SocialSection";
+import LieferandoSection from "@/components/sections/LieferandoSection";
 import InfoSection from "@/components/sections/InfoSection";
 import OfferSection from "@/components/sections/OfferSection";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <BrandSection />
       <WebsiteSection />
       <SocialSection />
+      <LieferandoSection />
       <InfoSection />
       <OfferSection />
       <Footer />
